@@ -45,6 +45,7 @@ public class GeneratorIT {
                 "    String realName;\n" +
                 "}\n");
     }
+    
 
     private File sourceFile(String file) {
         return new File("target/generated-sources/annotations/io/smallrye/graphql/client/generator/test/" + file + ".java");
