@@ -7,6 +7,8 @@ import java.io.File;
 
 import org.junit.jupiter.api.Test;
 
+
+
 public class GeneratorIT {
     @Test
     public void shouldHaveGeneratedApi() {
