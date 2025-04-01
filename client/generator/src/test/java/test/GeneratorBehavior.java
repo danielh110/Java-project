@@ -294,15 +294,6 @@ public class GeneratorBehavior {
                 GraphQLGeneratorException.class);
 
         then(thrown).hasMessage("unsupported type IntValue{value=3} for argument 'size'");
-        // will be:
-        // Map<String, String> generatedFiles = generator.generateSourceFiles();
-        //
-        // thenContainsExactly(generatedFiles,
-        //     generatedApiWith("import java.util.List;\n\n",
-        //         "@Query(\"teamsLargerThan\")\n" +
-        //             "        @Constant(\"size\", \"3\")\n" +
-        //             "        List<Team> teamsLargerThree();\n"),
-        //             TEAM);
     }
 
     private Generator givenGeneratorFor(String... queries) {
