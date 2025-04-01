@@ -32,6 +32,9 @@ public class GeneratorIT {
                 "}\n");
     }
 
+
+
+    
     @Test
     public void shouldHaveGeneratedSuperHero() {
         then(contentOf(sourceFile("SuperHero"))).isEqualTo("" +
